@@ -1,0 +1,22 @@
+                        <?php
+											include('connect-db.php'); // Database connection using PDO
+												
+	$result = mysqli_query($connection,"SELECT m.id,m.name, m.local_church, m.scc, l.name as l_name FROM members m,local_church l WHERE l.id = m.local_church   order by m.id DESC") 
+										or die("No Chirstians");  
+
+											while($rows=mysqli_fetch_assoc($result))
+											{ // Start looping table row
+						
+												//echo $rows['id']." ".$rows['full_name'];
+												echo "<tr class='odd gradeX'>";
+													$id = $rows['id'];
+                                                    echo "<td>".$rows['id']."</td>";
+		                                            echo "<td>".$rows['name']."</td>";
+		                                            echo "<td>".$rows['l_name']."</td>";
+		                                            echo "<td>".$rows['scc']."</td>";
+		                                           
+		                                            echo "<td align='center' bgcolor='#FFFFFF'>";echo "<a href='member-profile.php?id=$id'>Profile</a>"; echo "</td>";
+		                                        echo "</tr>";
+											}
+
+										?>

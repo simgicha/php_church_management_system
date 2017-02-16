@@ -1,0 +1,62 @@
+﻿.form_error {
+    border: 1px solid #E74C3C;
+    background: #FFF;
+    color: #E74C3C;
+}
+
+#busyIndicator {
+    position: absolute;
+    top: 250px;
+    left: 48%;
+    z-index: 100;
+    text-align: center;
+    display: none;
+}
+
+img.profile-pic {
+    width: 100%;
+    height: 150px;
+}
+
+img.profile-pic-lock {
+    width: 150px;
+    height: 150px;
+}
+
+img.profile-pic-small {
+    width: 50px;
+    height: 30px;
+}
+
+a.profile-edit {
+    top: 0px;
+    right: 50px;
+    margin: 0px;
+    color: #FFF;
+    opacity: 0.6;
+    border: medium none;
+    padding: 3px 9px;
+    font-size: 12px;
+    background: none repeat scroll 0% 0% #000;
+    position: absolute;
+}
+
+div.upsection {
+    width: 99.5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#pageloadAnimation {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    bottom: 50%;
+    left: 45%;
+    margin: 20px auto;
+    z-index: 100;
+    display: none;
+}
+kaactive{
+    background-color:red;
+}
